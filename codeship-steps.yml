@@ -1,6 +1,6 @@
 - name: deploy
-  service: docker_pgbouncer
+  service: wkhtmltopdf
   type: push
   encrypted_dockercfg_path: dockercfg.encrypted
-  image_name: civitium/docker-pgbouncer
+  image_name: civitium/docker-alpine-wkhtmltopdf
   image_tag: "{{.Branch}}"
