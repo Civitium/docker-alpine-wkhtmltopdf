@@ -1,0 +1,4 @@
+wkhtmltopdf:
+  build:
+    image: wkhtmltopdf
+    dockerfile: Dockerfile

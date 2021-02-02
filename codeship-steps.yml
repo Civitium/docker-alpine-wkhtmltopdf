@@ -1,0 +1,6 @@
+- name: deploy
+  service: docker_pgbouncer
+  type: push
+  encrypted_dockercfg_path: dockercfg.encrypted
+  image_name: civitium/docker-pgbouncer
+  image_tag: "{{.Branch}}"
